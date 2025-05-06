@@ -1,0 +1,20 @@
+{
+  "name": "sample-express",
+  "version": "1.0.0",
+  "description": "A sample express.js project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express.js"
+  ],
+  "author": "tian3rd",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "karma": "^6.4.4"
+  }
+}
