@@ -7,6 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import path from "path";
 import express from "express";
 import { routeAPINames, routeWeather } from "./routes.js";
 const server = express();
@@ -27,6 +28,11 @@ server.get("/api/names", (_req, res) => __awaiter(void 0, void 0, void 0, functi
 server.get("/api/weather/:zipcode", function (req, res) {
     const response = routeWeather({ zipcode: req.params.zipcode });
     res.send(response);
+});
+server.get("/components/weather", function (req, res) {
+    const filePath = path.join(process.cwd(), "public", "weather.html");
+    res.setHeader("Content-Type", "text/html");
+    res.sendFile(filePath);
 });
 server.listen(port, function () {
     console.log("Listening on port " + port);
