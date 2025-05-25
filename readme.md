@@ -1,5 +1,9 @@
 # Notes
 
+> [!NOTE]  
+> Bought from Humble Bundle: https://www.humblebundle.com/books/computer-science-fun-way-no-starch-books.
+> Book: https://nostarch.com/complete-developer.
+
 > [!TIP]
 > Frontend: user-facing part of a website or application. It runs on the client, typically a web browser. It's the **front office** of the web application.
 > Middleware: connects an application's frontend and backend and performs all of its chores such as integrating with third-party services and transferring and updating data. It's the **employees on the company floor**.
